@@ -31,7 +31,7 @@ body {
   color: #ffffff;
   background:
     linear-gradient(120deg, rgba(8, 8, 8, 0.72), rgba(8, 8, 8, 0.46)),
-    url("assets/modern-external.jpg") center / cover no-repeat;
+    url("assets/ceil-classic-architecture.jpg") center / cover no-repeat;
   border-bottom: 1px solid #2a2a2a;
 }
 
@@ -266,6 +266,25 @@ h3 {
   border-radius: var(--radius);
   padding: 1rem;
   box-shadow: 0 8px 24px rgba(31, 26, 20, 0.04);
+}
+
+.contact-vcard {
+  margin-top: 0.7rem;
+}
+
+.contact-vcard-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: 0.35rem;
+  text-decoration: none;
+}
+
+.contact-vcard-link img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
 }
 
 .data-list {
