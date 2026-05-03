@@ -13,3 +13,6 @@ build/
 
 Note.md
 tmp/
+
+# Local tooling
+.venv-img/

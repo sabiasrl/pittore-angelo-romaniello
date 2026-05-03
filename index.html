@@ -8,13 +8,13 @@
       name="description"
       content="Pittore edile a Potenza: stucco veneziano tradizionale a scendere, pittura 800, cappotto interno ed esterno, cornici e controsoffittature, parquet e pavimenti plastificati, cartongesso su misura. Settore privato e pubblico."
     />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/nav-overlay-image.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="top-nav">
-        <div class="brand">Angelo Raffaele Romaniello</div>
+        <a class="brand" href="#top">Angelo Raffaele Romaniello</a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Apri menu di navigazione">
           <span class="nav-toggle__icon" aria-hidden="true"></span>
         </button>
@@ -22,6 +22,8 @@
           <a href="#about">Chi sono</a>
           <a href="#servizi">Servizi</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#ristrutturazioni-di-pregio-potenza">In dettaglio</a>
+          <a href="#faq">FAQ</a>
           <a href="#contatti">Contatti</a>
         </div>
       </nav>
@@ -30,11 +32,31 @@
       <button class="mobile-nav-close" type="button" aria-label="Chiudi menu">
         <span aria-hidden="true">&times;</span>
       </button>
-      <a href="#about">Chi sono</a>
-      <a href="#servizi">Servizi</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#ispirazioni">Ispirazioni</a>
-      <a href="#contatti">Contatti</a>
+      <div class="mobile-nav-main">
+        <a class="mobile-nav-brand" href="#top">
+          <span class="mobile-nav-brand__name">Angelo Raffaele Romaniello</span>
+          <span class="mobile-nav-brand__tag">Pittore edile</span>
+        </a>
+        <nav class="mobile-nav-links" aria-label="Sezioni principali">
+          <a href="#about">Chi sono</a>
+          <a href="#servizi">Servizi</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#ispirazioni">Ispirazioni</a>
+          <a href="#ristrutturazioni-di-pregio-potenza">In dettaglio</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contatti">Contatti</a>
+        </nav>
+      </div>
+      <div class="mobile-nav-footer-art" aria-hidden="true">
+        <img
+          src="assets/nav-overlay-image.png"
+          alt=""
+          width="1920"
+          height="1920"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
     </div>
     <section class="hero" id="top">
       <div class="hero-content">
@@ -49,6 +71,7 @@
             <span class="hero-services-tag">Controsoffittatura</span>
             <span class="hero-services-tag">Cappotto</span>
             <span class="hero-services-tag">Pitturazione</span>
+            <span class="hero-services-tag">Stucco veneziano</span>
             <span class="hero-services-tag hero-services-tag--stack">
               <span class="hero-services-tag__main">Parquet</span>
               <span class="hero-services-tag__sub">moquette</span>
@@ -57,16 +80,16 @@
           </div>
         </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+393393877646">
-            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <a class="hero-phone-btn" href="tel:+393393877646">
+            <svg class="hero-phone-btn__icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path
                 fill="currentColor"
-                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-5-6.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z"
+                d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-3.25 2c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zm1.25 18.5h-3.5a.75.75 0 0 1 0-1.5h3.5a.75.75 0 0 1 0 1.5zM17 17H7V5h10v12z"
               />
             </svg>
-            Chiama ora
+            <span>339 3877646</span>
           </a>
-          <a class="btn btn-secondary" href="#contatti">Richiedi sopralluogo</a>
+          <span class="hero-sopralluogo">Richiedi un sopralluogo</span>
         </div>
       </div>
     </section>
@@ -107,6 +130,7 @@
           <article class="card">
             <h3>Dati aziendali</h3>
             <ul class="data-list">
+              <li><strong>Denominazione:</strong> Romaniello Angelo Raffaele</li>
               <li><strong>P.IVA:</strong> 01536470766</li>
               <li><strong>Codice Fiscale:</strong> RMNNLR61B12A519B</li>
               <li><strong>Telefono:</strong> <a href="tel:+393393877646">339 3877646</a></li>
@@ -123,7 +147,7 @@
         </div>
         <div class="services-grid">
           <article
-            class="service-card service-card--dialog service-card--stucco-visual"
+            class="service-card service-card--dialog"
             data-service-dialog="stucco-veneziano"
             tabindex="0"
             role="button"
@@ -131,14 +155,7 @@
             aria-controls="dialog-stucco-veneziano"
             aria-label="Apri dettaglio Stucco veneziano e decorazione"
           >
-            <img
-              src="assets/private/service-card-stucco-duo.png"
-              alt=""
-              loading="lazy"
-              decoding="async"
-              width="1240"
-              height="400"
-            />
+            <img src="assets/private/service-card-stucco-quad.png" alt="" loading="lazy" decoding="async" />
             <div>
               <h3>Stucco veneziano e decorazione</h3>
               <p>
@@ -249,73 +266,65 @@
         <div class="gallery-grid">
           <figure><img src="assets/indoor-yellow.jpg" alt="Ambiente interno con tono giallo" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/stone-wall-external.jpg" alt="Parete esterna in pietra" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/blue-parquet.jpg" alt="Pavimentazione in parquet blu" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/cameretta.jpeg" alt="Camera da letto ristrutturata" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/cornice-soffotto-veneziano-pittura-800.png" alt="Cornice e soffitto con pittura 800" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/blue-parquet.jpg" alt="Pavimentazione in parquet blu" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/travi-in-cartongesso.png" alt="Travi in cartongesso" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/dark-green-wall.jpg" alt="Parete verde" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/colonna-stucco-veneiano-verde.jpeg" alt="Colonna con stucco veneziano verde" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/modern-internal-pink.jpg" alt="Interno moderno con parete rosa" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/modern-external.jpg" alt="Facciata moderna esterna" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/hero-stuccatura-veneziana-soffitto-stellato.jpeg" alt="Stucco veneziano su soffitto stellato" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/hans-wall.jpg" alt="Finiture parete" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/external-insulation-construction-site.jpg" alt="Cantiere isolamento esterno" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/hero-stuccatura-veneziana-soffitto-stellato.jpeg" alt="Stucco veneziano su soffitto stellato" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-clean-office.jpg" alt="Ambiente ristrutturato" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/internal-wall-card.jpg" alt="Dettaglio parete interna" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/puttura-stoffa-stucco-veneziano.png" alt="Stucco veneziano su stoffa di cotone" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/stucco-veneziano-parete.jpeg" alt="Stucco veneziano su parete" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/modern-clean-office.jpg" alt="Ambiente ristrutturato" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/stucco-veneziano-pink.png" alt="Stucco veneziano rosa" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/indoor-luxury.jpg" alt="Interno con finiture pregiate" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/parquet.jpg" alt="Parquet di pregio per interni" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/colors-samples.jpg" alt="Campioni colore" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-interla-completed.jpg" alt="Interno moderno completato" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/internal-wall-card.jpg" alt="Dettaglio parete interna" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/stucco-veneziano-tradizionale.png" alt="Stucco veneziano tradizionale" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/indoor-luxury.jpg" alt="Interno con finiture pregiate" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/finte-travi-in-cartongesso.jpeg" alt="Travi finte in cartongesso" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/parquet.jpg" alt="Parquet di pregio per interni" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/applicazioni-cornici.jpeg" alt="Applicazione cornici decorative" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/colors-samples.jpg" alt="Campioni colore" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/stucco-veneziano-arancio-dettaglio.jpeg" alt="Dettaglio stucco veneziano arancio" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/modern-interla-completed.jpg" alt="Interno moderno completato" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/stucco-veneziano-e-cartongesso-su-misura.jpeg" alt="Stucco veneziano e cartongesso su misura" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/stucco-veneziano-e-cartongesso-colonna.jpeg" alt="Colonna con stucco e cartongesso" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/cartongesso-su-misura-soffitto-dettaglio.jpeg" alt="Cartongesso su misura: dettaglio soffitto" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/private/quadri.jpeg" alt="Ambienti con quadri e finiture" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/cameretta.jpeg" alt="Camera da letto ristrutturata" loading="lazy" decoding="async" /></figure>
         </div>
-        <div class="portfolio-subsection" id="portfolio-dettagli">
+        <div class="portfolio-subsection" id="ispirazioni">
           <h3 class="portfolio-subsection__title">Cornici, stucco a colore e cartongesso su misura</h3>
           <p class="portfolio-subsection__lede">
             Selezione di lavori recenti: posa cornici, integrazioni con stucco veneziano, volumi in cartongesso e
             dettagli su scale e archi.
           </p>
-          <div class="gallery-grid gallery-grid--featured">
-            <figure><img src="assets/private/cornici-e-stucco-veneziano.jpeg" alt="Cornici e stucco veneziano" loading="lazy" decoding="async" /></figure>
-            <figure><img src="assets/private/soffitto-veneziano.jpeg" alt="Soffitto veneziano" loading="lazy" decoding="async" /></figure>
-            <figure><img src="assets/private/cartongesso-su-misura-arco.jpeg" alt="Arco in cartongesso" loading="lazy" decoding="async" /></figure>
-            <figure><img src="assets/private/cornici-soffitto.jpeg" alt="Cornici sul soffitto" loading="lazy" decoding="async" /></figure>
+          <p class="section-kicker section-kicker--inspire portfolio-subsection__kicker">Inspire</p>
+          <div class="image-strip image-strip--inspire-sub">
             <figure><img src="assets/private/stucco-veneziano-rosso.jpeg" alt="Stucco veneziano rosso" loading="lazy" decoding="async" /></figure>
-            <figure><img src="assets/private/cartongesso-su-misura-soffitto-scale.jpeg" alt="Cartongesso su scala" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/parquet.jpg" alt="Parquet per ambienti eleganti" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/cornici-e-stucco-veneziano.jpeg" alt="Cornici e stucco veneziano" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/blue-parquet.jpg" alt="Pavimentazione in parquet blu" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/soffitto-veneziano.jpeg" alt="Soffitto con stucco veneziano" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/indoor-luxury.jpg" alt="Interno con finiture pregiate" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/cartongesso-su-misura-arco.jpeg" alt="Arco in cartongesso su misura" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/modern-external.jpg" alt="Facciata moderna esterna" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/applicazioni-cornici.jpeg" alt="Applicazioni cornici" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/colors-samples.jpg" alt="Campioni colore per finiture" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/cornici-soffitto.jpeg" alt="Cornici sul soffitto" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/stucco-veneziano-pink.png" alt="Stucco veneziano decorativo" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/private/cartongesso-su-misura-soffitto-scale.jpeg" alt="Cartongesso su scala e soffitto" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/internal-wall-card.jpg" alt="Dettaglio parete interna" loading="lazy" decoding="async" /></figure>
           </div>
-        </div>
-      </section>
-
-      <section class="section section-inspirations" id="ispirazioni">
-        <div class="section-head">
-          <p class="section-kicker section-kicker--inspire">Inspire</p>
-        </div>
-        <div class="image-strip">
-          <figure><img src="assets/private/stucco-veneziano-rosso.jpeg" alt="Stucco veneziano rosso" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/soffitto-veneziano.jpeg" alt="Soffitto con stucco veneziano" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/cornici-e-stucco-veneziano.jpeg" alt="Cornici e stucco veneziano" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/cartongesso-su-misura-arco.jpeg" alt="Arco in cartongesso su misura" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/stucco-veneziano-pink.png" alt="Stucco veneziano decorativo" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/puttura-stoffa-stucco-veneziano.png" alt="Stucco su stoffa di cotone" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/parquet.jpg" alt="Parquet per ambienti eleganti" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/private/applicazioni-cornici.jpeg" alt="Applicazioni cornici" loading="lazy" decoding="async" /></figure>
         </div>
       </section>
 
       <section class="section section-article" id="ristrutturazioni-di-pregio-potenza">
         <div class="section-head">
-          <h2>Ristrutturazioni esclusive</h2>
+          <p class="section-kicker">In dettaglio</p>
         </div>
         <article class="seo-article">
           <section class="article-block">
@@ -441,10 +450,9 @@
         </article>
       </section>
 
-      <section class="section section-faq">
+      <section class="section section-faq" id="faq">
         <div class="section-head">
           <p class="section-kicker">FAQ</p>
-          <h2>Domande frequenti</h2>
         </div>
         <div class="faq-list">
           <details>
