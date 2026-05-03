@@ -56,7 +56,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("assets/blue-parquet.jpg") center / cover no-repeat;
+  background: url("assets/private/cornici-e-stucco-veneziano.jpeg") center / cover no-repeat;
   filter: blur(0.5px);
   transform: scale(1.05);
   /* opacity: 0.58; */
@@ -517,6 +517,8 @@ a {
   padding: 1.35rem 1.25rem 1.2rem;
   box-shadow: 0 24px 48px rgba(31, 26, 20, 0.14);
   position: relative;
+  max-height: min(88vh, 720px);
+  overflow-y: auto;
 }
 
 .service-dialog__close {
@@ -599,6 +601,26 @@ a {
   max-height: 300px;
   object-fit: cover;
   display: block;
+}
+
+.portfolio-subsection {
+  margin-top: 2.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-subsection__title {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.portfolio-subsection__lede {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 42rem;
 }
 
 .gallery-alt {
