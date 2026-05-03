@@ -102,10 +102,26 @@ main,
 
 a.brand {
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.brand__icon {
+  height: 1.45rem;
+  width: auto;
+  max-height: 1.65rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 
 a.brand:hover {
   color: rgba(255, 255, 255, 0.88);
+}
+
+a.brand:hover .brand__icon {
+  opacity: 0.9;
 }
 
 a.brand:focus-visible {
