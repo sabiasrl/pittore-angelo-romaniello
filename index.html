@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angelo Raffaele Romaniello | Artigiano Edile Potenza</title>
+    <title>Angelo Raffaele Romaniello | Pittore edile Potenza</title>
     <meta
       name="description"
-      content="Artigiano Edile a Potenza: cartongesso, cappotto termico, pitturazioni, pavimenti e ristrutturazioni chiavi in mano. Oltre 40 anni di attivita'."
+      content="Pittore edile a Potenza: stucco veneziano tradizionale a scendere, pittura 800, cappotto interno ed esterno, cornici e controsoffittature, parquet e pavimenti plastificati, cartongesso su misura. Settore privato e pubblico."
     />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero" id="top">
+    <header class="site-header">
       <nav class="top-nav">
         <div class="brand">Angelo Raffaele Romaniello</div>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Apri menu di navigazione">
@@ -25,41 +25,83 @@
           <a href="#contatti">Contatti</a>
         </div>
       </nav>
-      <div class="mobile-nav-panel" id="mobile-nav-panel" hidden>
-        <button class="mobile-nav-close" type="button" aria-label="Chiudi menu">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <a href="#about">Chi sono</a>
-        <a href="#servizi">Servizi</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#ispirazioni">Ispirazioni</a>
-        <a href="#contatti">Contatti</a>
-      </div>
+    </header>
+    <div class="mobile-nav-panel" id="mobile-nav-panel" hidden>
+      <button class="mobile-nav-close" type="button" aria-label="Chiudi menu">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <a href="#about">Chi sono</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#ispirazioni">Ispirazioni</a>
+      <a href="#contatti">Contatti</a>
+    </div>
+    <section class="hero" id="top">
       <div class="hero-content">
-        <p class="eyebrow">Artigiano Edile a Potenza</p>
-        <h1>Ristrutturazioni e finiture professionali per interni ed esterni di pregio.</h1>
-        <p class="hero-text">
-          Angelo Raffaele Romaniello opera da oltre 40 anni a Potenza, in provincia e nelle regioni limitrofe, offrendo lavori affidabili e orientati al risultato.
-        </p>
+        <p class="eyebrow">Pittore edile a Potenza</p>
+        <h1 class="hero-title">
+          <span class="hero-title__main">Stucco veneziano, cappotto, cornici e controsoffittature</span>
+          <span class="hero-title__headline">Finiture professionali su misura, con lavorazioni per interno ed esterno.</span>
+        </h1>
+        <div class="hero-services">
+          <p class="hero-services-label">Servizi</p>
+          <div class="hero-services-tags">
+            <span class="hero-services-tag">Controsoffittatura</span>
+            <span class="hero-services-tag">Cappotto</span>
+            <span class="hero-services-tag">Pitturazione</span>
+            <span class="hero-services-tag hero-services-tag--stack">
+              <span class="hero-services-tag__main">Parquet</span>
+              <span class="hero-services-tag__sub">moquette</span>
+            </span>
+            <span class="hero-services-tag">Ristrutturazioni chiavi in mano</span>
+          </div>
+        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+393393877646">Chiama ora</a>
+          <a class="btn btn-primary" href="tel:+393393877646">
+            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-5-6.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z"
+              />
+            </svg>
+            Chiama ora
+          </a>
           <a class="btn btn-secondary" href="#contatti">Richiedi sopralluogo</a>
         </div>
       </div>
-    </header>
+    </section>
 
     <main>
       <section class="section section-about" id="about">
         <div class="section-head">
           <p class="section-kicker">About</p>
-          <h2>Esperienza artigianale e visione pratica del cantiere</h2>
+          <h2>Esperienza artigianale tra settore privato e progetti pubblici</h2>
         </div>
         <div class="about-grid">
           <article class="card">
+            <h3>Esperienza sul territorio</h3>
+            <p>
+              Da oltre 52 anni a Potenza e provincia: stucco veneziano tradizionale con lavorazione a
+              scendere, pittura 800, cappotto termico interno ed esterno, cornici e controsoffittature,
+              parquet e pavimentazioni anche per ambienti pubblici e sanitari.
+            </p>
+          </article>
+          <article class="card">
             <h3>Profilo professionale</h3>
             <p>
-              Cartongessista, Imbianchino, Posatore di Pavimenti, Ristrutturatore Edile e
-              General Contractor per interventi residenziali e commerciali.
+              Cartongessista, pittore edile, posatore di pavimenti, ristrutturatore edile e general
+              contractor. Realizzazione di mobili e armadi in cartongesso, travi finte, cornici,
+              controsoffittature da interno ed esterno, finiture pregiate come stucco veneziano e
+              lavorazioni storiche.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Settori privato e pubblico</h3>
+            <p>
+              <strong>Privato:</strong> abitazioni e spazi su misura.<br />
+              <strong>Pubblico:</strong> chiese, ospedali, case di cura, sale operatorie, uffici
+              pubblici; esperienza anche su committenze istituzionali come il Comune di Potenza e la
+              Regione Basilicata.
             </p>
           </article>
           <article class="card">
@@ -80,42 +122,120 @@
           <h2>Servizi principali</h2>
         </div>
         <div class="services-grid">
-          <article class="service-card">
-            <img src="assets/drywall-installation-blurry-right.jpg" alt="Cartongesso e controsoffitti" loading="lazy" decoding="async" />
+          <article
+            class="service-card service-card--dialog service-card--stucco-visual"
+            data-service-dialog="stucco-veneziano"
+            tabindex="0"
+            role="button"
+            aria-haspopup="dialog"
+            aria-controls="dialog-stucco-veneziano"
+            aria-label="Apri dettaglio Stucco veneziano e decorazione"
+          >
+            <img
+              src="assets/private/service-card-stucco-duo.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width="1240"
+              height="400"
+            />
             <div>
-              <h3>Cartongesso e Controsoffitti</h3>
-              <p>Pareti e controsoffitti in cartongesso per ambienti moderni e funzionali.</p>
-            </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/external-insulation-construction-site.jpg" alt="Cappotto termico e pitturazioni" loading="lazy" decoding="async" />
-            <div>
-              <h3>Cappotto Termico e Pitturazioni</h3>
-              <p>Isolamento termico e finiture interne/esterne con attenzione a resa e durata.</p>
-            </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/parquet.jpg" alt="Parquet e moquette" loading="lazy" decoding="async" />
-            <div>
-              <h3>Pavimentazioni: Parquet e Moquette</h3>
-              <p>Posa curata di parquet e moquette per abitazioni, uffici e spazi professionali.</p>
-            </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/indoor-yellow.jpg" alt="Ristrutturazioni chiavi in mano" loading="lazy" decoding="async" />
-            <div>
-              <h3>Ristrutturazioni Chiavi in Mano</h3>
-              <p>Gestione completa del lavoro: pianificazione, coordinamento e consegna finale.</p>
-            </div>
-          </article>
-          <article class="service-card">
-            <img src="assets/indoor-luxury.jpg" alt="Finiture di lusso per interni" loading="lazy" decoding="async" />
-            <div>
-              <h3>Finiture di Lusso per Interni</h3>
+              <h3>Stucco veneziano e decorazione</h3>
               <p>
-                Soluzioni su misura per ambienti eleganti: rivestimenti, dettagli decorativi e
-                finiture ad alto valore estetico.
+                Stucco veneziano tradizionale con lavorazione a scendere, anche su stoffa di cotone;
+                colonne a mano libera pitturate a scendere e particolari come scale ad arco in stucco.
               </p>
+              <p class="service-card-hint">Approfondisci</p>
+            </div>
+          </article>
+          <article
+            class="service-card service-card--dialog"
+            data-service-dialog="pittura-800"
+            tabindex="0"
+            role="button"
+            aria-haspopup="dialog"
+            aria-controls="dialog-pittura-800"
+            aria-label="Apri dettaglio Pittura 800 e cornici"
+          >
+            <img src="assets/private/cornice-soffotto-veneziano-pittura-800.png" alt="" loading="lazy" decoding="async" />
+            <div>
+              <h3>Pittura 800 e cornici</h3>
+              <p>Posa in opera di cornici e cicli di pregio; integrazione con controsoffitti e ambienti classici o contemporanei.</p>
+              <p class="service-card-hint">Approfondisci</p>
+            </div>
+          </article>
+          <article
+            class="service-card service-card--dialog"
+            data-service-dialog="controsoffittature"
+            tabindex="0"
+            role="button"
+            aria-haspopup="dialog"
+            aria-controls="dialog-controsoffittature"
+            aria-label="Apri dettaglio Controsoffittature"
+          >
+            <img src="assets/private/controsoffitto-cornici.png" alt="" loading="lazy" decoding="async" />
+            <div>
+              <h3>Controsoffittature</h3>
+              <p>
+                Controsoffittature da interno ed esterno—anche termiche per migliorare isolamento e comfort
+                nel plenum—rivestite da cornici dove richiesto, per volumi puliti e corretta gestione di luci
+                e impianti.
+              </p>
+              <p class="service-card-hint">Approfondisci</p>
+            </div>
+          </article>
+          <article
+            class="service-card service-card--dialog"
+            data-service-dialog="cappotto-termico"
+            tabindex="0"
+            role="button"
+            aria-haspopup="dialog"
+            aria-controls="dialog-cappotto-termico"
+            aria-label="Apri dettaglio Cappotto termico"
+          >
+            <img src="assets/external-insulation-construction-site.jpg" alt="" loading="lazy" decoding="async" />
+            <div>
+              <h3>Cappotto termico</h3>
+              <p>Lavorazione di cappotto a parete sia lato esterno sia in contesti interni, per isolamento e durata nel tempo.</p>
+              <p class="service-card-hint">Approfondisci</p>
+            </div>
+          </article>
+          <article
+            class="service-card service-card--dialog"
+            data-service-dialog="cartongesso"
+            tabindex="0"
+            role="button"
+            aria-haspopup="dialog"
+            aria-controls="dialog-cartongesso"
+            aria-label="Apri dettaglio Cartongesso su misura"
+          >
+            <img src="assets/private/travi-in-cartongesso.png" alt="" loading="lazy" decoding="async" />
+            <div>
+              <h3>Cartongesso su misura</h3>
+              <p>
+                Mobili e armadi in cartongesso, travi finte e soluzioni su misura per nicchie, pareti
+                tecniche e ambienti coordinati.
+              </p>
+              <p class="service-card-hint">Approfondisci</p>
+            </div>
+          </article>
+          <article
+            class="service-card service-card--dialog"
+            data-service-dialog="parquet-pavimenti"
+            tabindex="0"
+            role="button"
+            aria-haspopup="dialog"
+            aria-controls="dialog-parquet-pavimenti"
+            aria-label="Apri dettaglio Parquet e pavimenti plastificati"
+          >
+            <img src="assets/parquet.jpg" alt="" loading="lazy" decoding="async" />
+            <div>
+              <h3>Parquet e pavimenti plastificati</h3>
+              <p>
+                Parquet e pavimentazioni plastificate per abitazioni, uffici e contesti ad alto
+                standard: sale operatorie, palestre e spazi pubblici.
+              </p>
+              <p class="service-card-hint">Approfondisci</p>
             </div>
           </article>
         </div>
@@ -127,31 +247,32 @@
           <h2>Contesti, materiali e lavorazioni</h2>
         </div>
         <div class="gallery-grid">
-          <figure><img src="assets/modern-external.jpg" alt="Facciata moderna esterna" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-interla-completed.jpg" alt="Interno moderno completato" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-internal-pink.jpg" alt="Interno moderno con parete rosa" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/indoor-yellow.jpg" alt="Ambiente interno con tono giallo" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/internal-wall-card.jpg" alt="Dettaglio parete interna" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/indoor-luxury.jpg" alt="Visual interno luxury" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/painter-blurry-left-center.jpg" alt="Pittore al lavoro" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/external-painting.jpg" alt="Pitturazione esterna in corso" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/ceil-classic-architecture.jpg" alt="Controsoffitto classico" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/parquet.jpg" alt="Parquet di pregio per interni" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/blue-parquet.jpg" alt="Pavimentazione in parquet blu" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/colors-samples.jpg" alt="Campioni colore" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/dark-green-wall.jpg" alt="Parete verde" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/drywall-installation-blurry-right.jpg" alt="Installazione cartongesso" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/external-insulation-construction-site.jpg" alt="Cantiere isolamento esterno" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/external-insultaiton-workers.jpg" alt="Operatori cappotto termico" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/external-painting.jpg" alt="Pitturazione esterna" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/hans-wall.jpg" alt="Finiture parete" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/house-painter.jpg" alt="Imbianchino in opera" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-clean-office.jpg" alt="Ambiente ristrutturato" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/outdoor-worker.jpg" alt="Operatore in esterno" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/external-insultaiton-workers.jpg" alt="Operatori in cantiere per isolamento esterno" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/stone-wall-external.jpg" alt="Parete esterna in pietra" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/stux-color-samples.jpg" alt="Palette colore" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/wall-insulation.jpg" alt="Dettaglio isolamento parete" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/blue-parquet.jpg" alt="Pavimentazione in parquet blu" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/ceil-classic-architecture.jpg" alt="Controsoffitto classico" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/cameretta.jpeg" alt="Camera da letto ristrutturata" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/cornice-soffotto-veneziano-pittura-800.png" alt="Cornice e soffitto con pittura 800" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/travi-in-cartongesso.png" alt="Travi in cartongesso" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/dark-green-wall.jpg" alt="Parete verde" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/colonna-stucco-veneiano-verde.jpeg" alt="Colonna con stucco veneziano verde" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/modern-internal-pink.jpg" alt="Interno moderno con parete rosa" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/modern-external.jpg" alt="Facciata moderna esterna" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/hans-wall.jpg" alt="Finiture parete" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/external-insulation-construction-site.jpg" alt="Cantiere isolamento esterno" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/hero-stuccatura-veneziana-soffitto-stellato.jpeg" alt="Stucco veneziano su soffitto stellato" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/modern-clean-office.jpg" alt="Ambiente ristrutturato" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/internal-wall-card.jpg" alt="Dettaglio parete interna" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/puttura-stoffa-stucco-veneziano.png" alt="Stucco veneziano su stoffa di cotone" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/stucco-veneziano-parete.jpeg" alt="Stucco veneziano su parete" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/stucco-veneziano-pink.png" alt="Stucco veneziano rosa" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/indoor-luxury.jpg" alt="Interno con finiture pregiate" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/parquet.jpg" alt="Parquet di pregio per interni" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/colors-samples.jpg" alt="Campioni colore" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/modern-interla-completed.jpg" alt="Interno moderno completato" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/stucco-veneziano-tradizionale.png" alt="Stucco veneziano tradizionale" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/finte-travi-in-cartongesso.jpeg" alt="Travi finte in cartongesso" loading="lazy" decoding="async" /></figure>
         </div>
       </section>
 
@@ -160,13 +281,13 @@
           <p class="section-kicker section-kicker--inspire">Inspire</p>
         </div>
         <div class="image-strip">
-          <figure><img src="assets/indoor-luxury.jpg" alt="Interno luxury moderno" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/stucco-veneziano-pink.png" alt="Stucco veneziano decorativo" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/puttura-stoffa-stucco-veneziano.png" alt="Stucco su stoffa di cotone" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/parquet.jpg" alt="Parquet per ambienti eleganti" loading="lazy" decoding="async" /></figure>
           <figure><img src="assets/modern-external.jpg" alt="Esterno moderno" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-internal-pink.jpg" alt="Interno moderno con finiture" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/internal-wall-card.jpg" alt="Dettaglio parete interna" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/indoor-yellow.jpg" alt="Ambiente interno luminoso" loading="lazy" decoding="async" /></figure>
-          <figure><img src="assets/modern-interla-completed.jpg" alt="Interno completato" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/private/cameretta.jpeg" alt="Interno ristrutturato" loading="lazy" decoding="async" /></figure>
+          <figure><img src="assets/indoor-luxury.jpg" alt="Interno con finiture pregiate" loading="lazy" decoding="async" /></figure>
         </div>
       </section>
 
@@ -216,37 +337,52 @@
             <div>
               <h3>Finiture di pregio per interni</h3>
               <p>
-                Le finiture di pregio sono il cuore di una ristrutturazione ben riuscita.
-                Materiali selezionati, posa professionale e cura dei dettagli portano a finiture
-                di lusso per interni con elevato impatto estetico.
+                Le finiture di pregio sono il cuore di una ristrutturazione ben riuscita:
+                stucco veneziano tradizionale con lavorazione a scendere, pittura 800, cicli su stoffa
+                di cotone e dettagli decorativi eseguiti con materiali selezionati e posa professionale.
               </p>
               <p>
-                Tra gli interventi piu' richiesti rientrano pitture decorative e decorazioni
-                murali, ideali per personalizzare ambienti living, camere e spazi rappresentativi.
+                Pitture decorative, decorazioni murali e ambienti rappresentativi: soluzioni calibrate
+                su living, camere e spazi pubblici o istituzionali.
               </p>
             </div>
           </section>
 
           <section class="article-block">
-            <figure><img src="assets/drywall-installation-blurry-right.jpg" alt="Opere in cartongesso su misura e controsoffitti di design" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/internal-wall-card.jpg" alt="Decorazioni artistiche e carta da parati" loading="lazy" decoding="async" /></figure>
+            <div>
+              <h3>Decorazioni artistiche e carta da parati</h3>
+              <p>
+                Effetti materici, velature, fasce decorative e boiserie leggere valorizzano pareti e
+                corridoi senza appesantire gli ambienti. La posa di carta da parati, anche di grande formato o
+                a rapporto, richiede fondi preparati e giunte invisibili per un risultato stabile nel tempo.
+              </p>
+              <p>
+                Soluzioni studiate per zona giorno, camere e spazi di rappresentanza, con abbinamento
+                coordinato a pitture, parquet e illuminazione già previsti nel progetto.
+              </p>
+            </div>
+          </section>
+
+          <section class="article-block">
+            <figure><img src="assets/private/travi-in-cartongesso.png" alt="Opere in cartongesso, travi e controsoffitti" loading="lazy" decoding="async" /></figure>
             <div>
               <h3>Opere in cartongesso su misura e controsoffitti di design</h3>
               <p>
-                Le opere in cartongesso su misura permettono di creare nicchie, pareti tecniche e
-                soluzioni funzionali per illuminazione e impianti. I controsoffitti di design
-                completano gli ambienti con linee pulite, giochi di volume e valorizzazione della
-                luce.
+                Mobili e armadi in cartongesso, travi finte, nicchie e pareti tecniche per illuminazione
+                e impianti. Controsoffittature da interno ed esterno, anche termiche e rivestite da
+                cornici, per linee pulite, comfort e gestione ottimale della luce.
               </p>
               <p>
-                In ottica SEO e ricerca locale, questo tipo di intervento e' spesso associato a
-                richieste come parquet e controsoffitti di design, soprattutto per ristrutturazioni
-                complete in appartamenti di fascia medio-alta.
+                Interventi frequenti su ristrutturazioni complete in contesti residenziali e pubblici,
+                con coordinamento tra finiture pregiate e prerequisiti degli ambienti (sale operatorie,
+                uffici, edifici storici).
               </p>
             </div>
           </section>
 
           <section class="article-block">
-            <figure><img src="assets/colors-samples.jpg" alt="Parquet di pregio e pavimentazioni di lusso" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/blue-parquet.jpg" alt="Parquet di pregio e pavimentazioni di lusso" loading="lazy" decoding="async" /></figure>
             <div>
               <h3>Parquet di pregio e pavimentazioni di lusso</h3>
               <p>
@@ -263,7 +399,7 @@
           </section>
 
           <section class="article-block">
-            <figure><img src="assets/internal-wall-card.jpg" alt="Servizio chiavi in mano a Potenza e provincia" loading="lazy" decoding="async" /></figure>
+            <figure><img src="assets/modern-clean-office.jpg" alt="Servizio chiavi in mano a Potenza e provincia" loading="lazy" decoding="async" /></figure>
             <div>
               <h3>Servizio chiavi in mano a Potenza e provincia</h3>
               <p>
@@ -308,6 +444,13 @@
           <details>
             <summary>Lavorate anche su uffici e locali commerciali?</summary>
             <p>Si, realizziamo interventi anche in uffici, negozi e spazi professionali.</p>
+          </details>
+          <details>
+            <summary>Eseguite lavori in strutture pubbliche o sanitarie?</summary>
+            <p>
+              Si: esperienza su chiese, ospedali, case di cura, sale operatorie e uffici pubblici, oltre
+              al settore privato e a committenze istituzionali.
+            </p>
           </details>
           <details>
             <summary>Posso richiedere solo un singolo servizio?</summary>
@@ -360,6 +503,169 @@
         </a>
       </p>
     </footer>
+
+    <dialog class="service-dialog" id="dialog-cartongesso" aria-labelledby="dialog-cartongesso-title">
+      <div class="service-dialog__surface">
+        <button type="button" class="service-dialog__close" aria-label="Chiudi">&times;</button>
+        <h2 id="dialog-cartongesso-title" class="service-dialog__title">Cartongesso su misura</h2>
+        <p class="service-dialog__text">
+          Realizzazione di elementi su progetto: mobili e armadi in cartongesso, travi finte,
+          controsoffittature con cornici—anche termiche su progetto—nicchie e pareti tecniche per impianti e illuminazione.
+          Lavorazioni coordinate per ambienti residenziali e per il settore pubblico, con attenzione
+          alle geometrie e alla finitura in fase di tinteggiatura e velatura.
+        </p>
+        <div class="service-dialog__works">
+          <figure>
+            <img src="assets/private/travi-in-cartongesso.png" alt="Struttura travi in cartongesso" loading="lazy" decoding="async" />
+            <figcaption>Travi e struttura in cartongesso</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/finte-travi-in-cartongesso.jpeg" alt="Travi finte in cartongesso" loading="lazy" decoding="async" />
+            <figcaption>Travi finte</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" />
+            <figcaption>Controsoffitto con cornici</figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="service-dialog" id="dialog-stucco-veneziano" aria-labelledby="dialog-stucco-veneziano-title">
+      <div class="service-dialog__surface">
+        <button type="button" class="service-dialog__close" aria-label="Chiudi">&times;</button>
+        <h2 id="dialog-stucco-veneziano-title" class="service-dialog__title">Stucco veneziano e decorazione</h2>
+        <p class="service-dialog__text">
+          Esecuzione di stucco veneziano tradizionale con lavorazione a scendere, anche applicato su
+          stoffa di cotone per superfici omogenee e luminose. Finiture adatte a pareti rappresentative,
+          corridoi e ambienti residenziali; possibilità di integrazione con decoro architettonico e
+          cicli di pregio coordinati con cornici e soffitti.
+        </p>
+        <div class="service-dialog__works">
+          <figure>
+            <img src="assets/private/stucco-veneziano-tradizionale.png" alt="Stucco tradizionale su parete" loading="lazy" decoding="async" />
+            <figcaption>Stucco tradizionale su parete</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/stucco-veneziano-pink.png" alt="Parete rosa con stucco veneziano" loading="lazy" decoding="async" />
+            <figcaption>Parete rosa con stucco veneziano</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/stucco-veneziano-parete.jpeg" alt="Parete con tono decorativo" loading="lazy" decoding="async" />
+            <figcaption>Parete con tono decorativo</figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="service-dialog" id="dialog-controsoffittature" aria-labelledby="dialog-controsoffittature-title">
+      <div class="service-dialog__surface">
+        <button type="button" class="service-dialog__close" aria-label="Chiudi">&times;</button>
+        <h2 id="dialog-controsoffittature-title" class="service-dialog__title">Controsoffittature</h2>
+        <p class="service-dialog__text">
+          Progettazione ed esecuzione di controsoffittature per interni ed esterni: volumi regolarizzati,
+          fascioni e cornici, integrazione di illuminazione e passaggi impiantistici. Le
+          <strong>controsoffittature termiche</strong> utilizzano stratificazioni isolanti nel plenum per
+          ridurre dispersioni verso l&apos;alto, migliorare il comfort acustico dove previsto e coordinarsi
+          con barriere al vapore e ponti termici verso le pareti perimetrali. Soluzioni anche di pregio con
+          finiture coordinate su cornici e superfici a vista, fino a soffitti decorati con stucco e
+          lavorazioni dedicate.
+        </p>
+        <div class="service-dialog__works">
+          <figure>
+            <img src="assets/private/controsoffitto-cornici.png" alt="Controsoffittatura con cornici" loading="lazy" decoding="async" />
+            <figcaption>Controsoffitto con cornici</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/cornice-soffotto-veneziano-pittura-800.png" alt="Cornici e soffitto con pittura 800" loading="lazy" decoding="async" />
+            <figcaption>Cornici e ciclo pittura 800</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/hero-stuccatura-veneziana-soffitto-stellato.png" alt="Soffitto decorato con stucco veneziano" loading="lazy" decoding="async" />
+            <figcaption>Soffitto decorato</figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="service-dialog" id="dialog-pittura-800" aria-labelledby="dialog-pittura-800-title">
+      <div class="service-dialog__surface">
+        <button type="button" class="service-dialog__close" aria-label="Chiudi">&times;</button>
+        <h2 id="dialog-pittura-800-title" class="service-dialog__title">Pittura 800 e cornici</h2>
+        <p class="service-dialog__text">
+          Posa in opera di cornici e cicli di finitura di pregio, inclusa la <strong>pittura 800</strong> per
+          superfici uniformi e resistenza alla luce. Integrazione con controsoffitti, fascioni e ambienti
+          classici o contemporanei; abbinamento colore e velature coordinate sul resto dell&apos;ambiente.
+        </p>
+        <div class="service-dialog__works">
+          <figure>
+            <img src="assets/private/cornice-soffotto-veneziano-pittura-800.png" alt="Cornici e soffitto con pittura 800" loading="lazy" decoding="async" />
+            <figcaption>Cornici e ciclo pittura 800</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/private/controsoffitto-cornici.png" alt="Integrazione cornici e controsoffitto" loading="lazy" decoding="async" />
+            <figcaption>Cornici con controsoffitto</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/colors-samples.jpg" alt="Campioni colore per finiture" loading="lazy" decoding="async" />
+            <figcaption>Scala colori e finiture</figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="service-dialog" id="dialog-cappotto-termico" aria-labelledby="dialog-cappotto-termico-title">
+      <div class="service-dialog__surface">
+        <button type="button" class="service-dialog__close" aria-label="Chiudi">&times;</button>
+        <h2 id="dialog-cappotto-termico-title" class="service-dialog__title">Cappotto termico</h2>
+        <p class="service-dialog__text">
+          Isolamento a cappotto su facciata e interventi anche in contesti interni o tecnici, per migliorare
+          il comfort e i consumi. Seguiti i passaggi di preparazione del supporto, posa del materiale
+          isolante e finitura protettiva o rasante, con possibilità di integrazione con tinteggiatura esterna.
+        </p>
+        <div class="service-dialog__works">
+          <figure>
+            <img src="assets/external-insulation-construction-site.jpg" alt="Cantiere cappotto termico" loading="lazy" decoding="async" />
+            <figcaption>Isolamento in cantiere</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/modern-external.jpg" alt="Facciata dopo intervento" loading="lazy" decoding="async" />
+            <figcaption>Facciata e contesto edilizio</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/stone-wall-external.jpg" alt="Dettaglio parete esterna" loading="lazy" decoding="async" />
+            <figcaption>Finiture esterne</figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="service-dialog" id="dialog-parquet-pavimenti" aria-labelledby="dialog-parquet-pavimenti-title">
+      <div class="service-dialog__surface">
+        <button type="button" class="service-dialog__close" aria-label="Chiudi">&times;</button>
+        <h2 id="dialog-parquet-pavimenti-title" class="service-dialog__title">Parquet e pavimenti plastificati</h2>
+        <p class="service-dialog__text">
+          Posa di parquet e pavimentazioni plastificate per abitazioni, uffici e ambienti professionali:
+          sale operatorie, palestre e spazi pubblici. Attenzione alla preparazione del massetto, giunti,
+          battiscopa e continuità estetica con scale e vani attigui.
+        </p>
+        <div class="service-dialog__works">
+          <figure>
+            <img src="assets/parquet.jpg" alt="Parquet in essenza naturale" loading="lazy" decoding="async" />
+            <figcaption>Parquet</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/blue-parquet.jpg" alt="Parquet con tonalità blu" loading="lazy" decoding="async" />
+            <figcaption>Soluzioni cromatiche</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/indoor-luxury.jpg" alt="Ambiente con pavimentazione di pregio" loading="lazy" decoding="async" />
+            <figcaption>Ambiente completato</figcaption>
+          </figure>
+        </div>
+      </div>
+    </dialog>
+
     <script>
       (function () {
         var toggle = document.querySelector(".nav-toggle");
@@ -387,6 +693,39 @@
         closeBtn.addEventListener("click", closeMenu);
         panel.querySelectorAll("a").forEach(function (link) {
           link.addEventListener("click", closeMenu);
+        });
+      })();
+
+      (function () {
+        document.querySelectorAll("[data-service-dialog]").forEach(function (card) {
+          var key = card.getAttribute("data-service-dialog");
+          var dialog = document.getElementById("dialog-" + key);
+          if (!dialog || typeof dialog.showModal !== "function") return;
+
+          var closeBtn = dialog.querySelector(".service-dialog__close");
+          if (!closeBtn) return;
+
+          function openDialog() {
+            dialog.showModal();
+          }
+
+          function closeDialog() {
+            dialog.close();
+          }
+
+          card.addEventListener("click", openDialog);
+          card.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              openDialog();
+            }
+          });
+
+          closeBtn.addEventListener("click", closeDialog);
+
+          dialog.addEventListener("click", function (e) {
+            if (e.target === dialog) closeDialog();
+          });
         });
       })();
     </script>

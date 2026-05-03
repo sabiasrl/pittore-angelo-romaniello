@@ -12,3 +12,4 @@ build/
 *.log
 
 Note.md
+tmp/
